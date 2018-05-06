@@ -3,8 +3,9 @@ Two implementations of the producer-consumer problem in Python3.
 
 # fifo_queue.py
 A bare bones version of a single producer and single consumer thread working
-on a shared work queue.  Condition is used to handle thread synchronization,
-as it is cleaner than using Lock or Semaphore in this case.
+on a shared work queue, deliberately not using Queue().  Condition is used to
+handle thread synchronization, as it is cleaner than using Lock or Semaphore in
+this case.
 
 # multi_fifo_queue.py
 This version is the more Pythonic way to handle this problem, as it uses the
