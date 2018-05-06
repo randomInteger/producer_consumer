@@ -16,7 +16,7 @@ from time import sleep
 from threading import Thread
 
 
-#Note we do not need to use the threadsafe Queue class.
+#Queue handles thread sync, waits, and has atomic actions.
 max_queue_size = 64
 work_queue = Queue(max_queue_size)
 max_producers = 8
