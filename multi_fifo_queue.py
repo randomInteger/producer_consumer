@@ -19,7 +19,6 @@ from threading import Thread
 #Note we do not need to use the threadsafe Queue class.
 max_queue_size = 64
 work_queue = Queue(max_queue_size)
-condition = Condition()
 max_producers = 8
 max_consumers = 8
 
