@@ -53,11 +53,11 @@ sleep(2)
 
 #Start the work
 producer_list = []
-for x in range(1,max_producers+1):
+for x in range(0,max_producers):
     producer_list.append(Producer())
 
 consumer_list = []
-for x in range(1,max_consumers+1):
+for x in range(0,max_consumers):
     producer_list.append(Consumer())
 
 for prod in producer_list:
