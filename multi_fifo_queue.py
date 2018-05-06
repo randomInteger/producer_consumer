@@ -58,7 +58,7 @@ for x in range(0,max_producers):
 
 consumer_list = []
 for x in range(0,max_consumers):
-    producer_list.append(Consumer())
+    consumer_list.append(Consumer())
 
 for prod in producer_list:
     prod.start()
